@@ -37,9 +37,10 @@ jobs:
 
       - name: Install system dependencies
         run: |
+          sudo dpkg --add-architecture i386
           sudo apt-get update
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
-            git zip unzip build-essential ccache libncurses5:i386 libstdc++6:i386 libgtk2.0-0 libgl1-mesa-glx \
+            git zip unzip build-essential ccache libncurses5:i386 libstdc++6:i386 libglu1-mesa:i386 \
             autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libsdl2-dev libffi-dev libssl-dev
 
       - name: Install Buildozer, Cython, and tools
