@@ -29,7 +29,7 @@ version = 0.1
 
 # (list) Application requirements
 # Add other dependencies here if needed (e.g., pypdf)
-requirements = python3,kivy,openssl
+requirements = python3,kivy
 
 # (list) Custom source folders for requirements
 #requirements.source_dirname =
